@@ -1,0 +1,8 @@
+version: '2.0'
+services:
+  base:
+    container_name: 'amazonlinux-base'
+    build: ./base
+    ports:
+      - '17022:22'
+    command: /sbin/init
